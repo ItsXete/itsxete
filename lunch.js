@@ -14,7 +14,15 @@
  */
 
 const whatToDoForLunch = function(hungry, availableTime) {
-  console.log("I don't know what to do!");
+  if (!hungry) {
+    console.log("Wait til you're hungry.");
+  } else if (availableTime < 20) {
+    console.log("Grab a snack.");
+  } else if (availableTime <= 30) {
+    console.log("Cook a meal.");
+  } else {
+    console.log("Cap.");
+  }
 }
 
 
